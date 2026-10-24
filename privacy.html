@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maknon Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Maknon Quran recitation app. سياسة الخصوصية لتطبيق مكنون.">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d1d1f; --muted: #5b5b60; --rule: #e3e0d8;
+    --accent: #2f5fb3; --card: #ffffff; --confirm-bg: #fff4c2; --confirm-fg: #5a4300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --fg: #ececf0; --muted: #a4a4ad; --rule: #2c2c31;
+      --accent: #8fb0ff; --card: #1c1c1f; --confirm-bg: #4a3b00; --confirm-fg: #ffe9a3;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  [lang="ar"] { font-family: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", Tahoma, -apple-system, sans-serif; line-height: 1.85; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav.lang { display: flex; gap: 12px; justify-content: flex-end; margin-bottom: 8px; font-size: 15px; }
+  a { color: var(--accent); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  p, li { margin: 6px 0; }
+  ul { padding-inline-start: 22px; }
+  .meta { color: var(--muted); font-size: 15px; }
+  .card { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 4px 16px; margin: 12px 0; }
+  .confirm { background: var(--confirm-bg); color: var(--confirm-fg); border-radius: 4px; padding: 0 4px; font-size: 0.9em; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 48px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { border-bottom: 1px solid var(--rule); padding: 8px 6px; text-align: start; vertical-align: top; }
+  code { font-size: 0.92em; word-break: break-all; }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="#en">English</a><a href="#ar" lang="ar">العربية</a></nav>
+
+
+<!-- ============================ ENGLISH ============================ -->
+<section id="en" lang="en" dir="ltr">
+<h1>Maknon Privacy Policy</h1>
+<p class="meta">Effective date: 24 October 2026 · Applies to the Maknon app for iPhone (bundle <code>com.eqrra.maknoon</code>), including TestFlight builds.</p>
+
+<p>Maknon is a free Quran recitation app published by <strong>EQRAA FIRST INVESTMENT COMPANY</strong>, Riyadh 34422, Saudi Arabia ("we"). There is no sign-up or login, no ads, no analytics and no crash reporting, and Maknon does not track you. Most of what it remembers stays on your phone. This page explains the few things that leave it.</p>
+
+<div class="card">
+<h3>In short</h3>
+<ul>
+  <li>While you recite, your voice is streamed live to our recognition server so Maknon can follow you and point out mistakes. The server stores nothing: no audio, no transcripts, no results and no logs.</li>
+  <li>Quran text, translations, tafsir, recitations and fonts are downloaded from QuranHub. Those requests carry no name or account.</li>
+  <li>If you join a group, the groups server receives a display name and, only if you turn sharing on, your daily totals.</li>
+  <li>Everything else (sessions, mistakes, progress, goals, bookmarks, settings and your saved recordings) stays on your phone, and goes into a backup file only if you export one.</li>
+</ul>
+</div>
+
+<h2>1. Your recitation audio</h2>
+<p>Maknon uses the microphone only when you start a recitation session, a test or a voice search, and only after you allow microphone access. While it listens, the app streams your voice live over an encrypted connection (WSS) to the Nabr recognition server run by MISRAJ AI at <code>nabr.misraj.ai</code>. Along with the audio it sends the place you start from (surah, ayah and word) and your chosen strictness levels for recitation and tajweed. It does not send your name, a user ID or a device ID.</p>
+<p>The server uses the audio only to recognise your recitation and send the results back to you in real time. <strong>It stores nothing: no audio, no transcripts, no results and no logs.</strong> When the session, test or search ends, nothing about it is left on the server. Because nothing is kept, the app does not need to ask for consent to store recordings, and it has no such option.</p>
+<p>Voice search works the same way: the audio is streamed to the same server to find the ayah you recited, and nothing is recorded or saved for it, on the server or on your phone.</p>
+<p>We plan to move recognition to qurani.ai's Nabr server (<code>api.qurani.ai</code>). We will update this policy before a version that uses it is released.</p>
+
+<h3>Recordings saved on your phone</h3>
+<p>By default Maknon also saves the audio of each session and test <strong>on your phone</strong>, so you can replay sessions, hear mistake clips and share a session. These recordings are never uploaded by the app. They are deleted after 30 days, and the oldest go first once they take more than 500 MB. You can change both limits, turn saving off (Settings › Privacy and data › Data usage › Keep session audio) or delete every recording at once (Settings › Delete all audio).</p>
+
+<h2>2. Quran content (QuranHub)</h2>
+<p>Maknon downloads the Quran text, Mushaf pages and fonts, translations, tafsir, word data and recitations from QuranHub by qurani.ai (<code>api.quranhub.com</code>) and its content delivery network (<code>quranhub.b-cdn.net</code>). When you search the Quran, the words you type are sent to QuranHub to get results. These requests carry no name, account, recording or device ID. Like any web request, they show your IP address and which content you asked for, and qurani.ai's own terms apply to them.</p>
+
+<h2>3. Groups and leaderboards</h2>
+<p>Groups let you read with family and friends, share a khatma and see group and public leaderboards. They are optional. They run on a database hosted for MISRAJ AI on Supabase, in Frankfurt, Germany (EU). When you first create or join a group, the app signs in anonymously: the server creates a random user ID with no e-mail, phone or password, and the app keeps the sign-in token on your phone. The groups server then stores:</p>
+<ul>
+  <li>the display name you type (up to 40 characters; it can be any name you like), which members of your groups can see;</li>
+  <li>groups you create (name, emoji, description, public or private, invite code), your memberships and role, notices you post, juz you claim in a shared khatma, and reports you make (reason and an optional note);</li>
+  <li>only if you turn on <em>Share daily totals</em>: one total per day of minutes, pages, ayahs and completed khatmas. Other members see your totals per week, Hijri month or all time, not a day-by-day list. Public leaderboards show totals per group, never per person;</li>
+  <li>as on any server: your IP address and device type (user agent) with each sign-in session, in an access log and in the hosting provider's request logs.</li>
+</ul>
+<p>The groups server never receives your recordings, your mistakes or anything you recite.</p>
+
+<h2>4. What stays on your phone</h2>
+<p>Your sessions, mistakes, word and page progress, memorisation and review schedule, tests, goals, streaks and achievements, bookmarks, settings, display name, saved recordings and downloaded content are stored on your phone, in the app's database and files. They leave it in a backup file only if you export one yourself (section 6). If your phone's own backup (iCloud or a computer backup) is on, it can include this data, as it does for other apps.</p>
+<p>Reminders, when you turn them on, are scheduled on your phone. Maknon does not use push notifications and does not register a push token.</p>
+
+<h2>5. What we do not do</h2>
+<ul>
+  <li>No sign-up, ads, analytics, crash-reporting or tracking tools, and no advertising identifier.</li>
+  <li>We do not sell or rent data, and we do not combine it with data from other companies.</li>
+  <li>No in-app purchases or subscriptions.</li>
+</ul>
+
+<h2>6. When you share something</h2>
+<p>Maknon sends a recording, a session card or badge image, ayah text, a group invite, a backup file or a diagnostics file only when you share it yourself through the iPhone share sheet or copy it. Where it goes is up to you. A backup file holds your history (sessions, mistakes, word progress, bookmarks, khatma progress, memorisation and review cards, goals, test results, when you shared verses, and the length and date of each saved recording) and most of your settings, including your display name, recent searches and recently read pages. It holds no audio. The file is not encrypted: it leaves your phone only where you save or send it, and anyone who has it can read it. Links you open (for example to qurani.ai) open in Safari's in-app view under that site's own terms.</p>
+
+<h2>7. Service providers and Apple</h2>
+<table>
+  <tr><th>Who</th><th>What they receive</th><th>Why</th></tr>
+  <tr><td>MISRAJ AI (Nabr server)</td><td>Live microphone audio during a session, a test or a voice search, start position and strictness levels. Processed in real time; nothing is stored.</td><td>Recitation recognition</td></tr>
+  <tr><td>qurani.ai (QuranHub and its CDN)</td><td>Content requests and search words, IP address</td><td>Quran content and downloads</td></tr>
+  <tr><td>Supabase, for MISRAJ AI</td><td>The groups data listed in section 3</td><td>Groups and leaderboards</td></tr>
+  <tr><td>Apple</td><td>As the App Store and TestFlight operator. If you test through TestFlight, Apple shares with us the feedback and screenshots you send, crash reports, and the name and e-mail you were invited with. If you allow "Share with App Developers" in iOS settings, Apple may also share crash reports and summary usage figures.</td><td>Distribution and beta testing, under Apple's privacy policy</td></tr>
+</table>
+
+<h2>8. Children</h2>
+<p>Maknon is for readers of all ages and does not ask for age. It has no ads or tracking. The only place where someone can type text that others see is groups (display names, group names and notices). Younger children should use groups with a parent. If you believe a child has shared personal information there, write to us and we will remove it.</p>
+
+<h2>9. How long data is kept and how to delete it</h2>
+<ul>
+  <li><strong>On your phone:</strong> recordings follow the limits in section 1. To delete everything, use You › Erase all data on this device, or delete the app.</li>
+  <li><strong>Recitation audio:</strong> nothing is stored on the server (section 1).</li>
+  <li><strong>Groups:</strong> turning off <em>Share daily totals</em> deletes every total you shared. You can leave a group, and an owner can delete a group with its notices and board. Erase all data on this device also deletes your groups data from the server (your name, memberships, notices, totals, claims and reports; groups you own pass to another member, or are deleted if no one is left). Anonymous users who do not open groups for 180 days are deleted with their data, and the sign-in access log is cleared after 30 days. The hosting provider's request logs follow its own retention.</li>
+  <li>If you deleted the app before erasing, we cannot link your anonymous groups data to you. It is deleted automatically after 180 days. Write to us if you need it removed sooner and we will help as far as we can identify it.</li>
+</ul>
+
+<h2>10. Security</h2>
+<p>All connections use encryption (HTTPS and WSS). Group data is protected by row-level security on the server, so members read only what their groups allow.</p>
+
+<h2>11. Your rights and contact</h2>
+<p>You can ask us what data we hold about you, or ask us to correct or delete it. Because Maknon has no sign-up, most of your data is only on your phone and under your control.</p>
+<p>EQRAA FIRST INVESTMENT COMPANY, Riyadh 34422, Saudi Arabia · <a href="mailto:hello@eqrra.com">hello@eqrra.com</a></p>
+
+<h2>12. Changes</h2>
+<p>If we change what the app sends, we will update this page and its effective date before that version is released.</p>
+</section>
+
+<hr>
+
+<!-- ============================ ARABIC ============================ -->
+<section id="ar" lang="ar" dir="rtl">
+<h1>سياسة الخصوصية لتطبيق مَكنون</h1>
+<p class="meta">تاريخ السريان: ٢٤ أكتوبر ٢٠٢٦ · تنطبق على تطبيق مكنون للآيفون (المعرّف <code dir="ltr">com.eqrra.maknoon</code>)، ومنها نسخ TestFlight التجريبية.</p>
+
+<p>مكنون تطبيق مجاني لتلاوة القرآن الكريم، تنشره <span dir="ltr"><strong>EQRAA FIRST INVESTMENT COMPANY</strong></span>، الرياض ٣٤٤٢٢، المملكة العربية السعودية («نحن»). لا تسجيل فيه ولا دخول، ولا إعلانات ولا تحليلات ولا تقارير أعطال، ولا يتتبّعك. وأغلب ما يحفظه يبقى على جوالك. وتشرح هذه الصفحة الأشياء القليلة التي تخرج منه.</p>
+
+<div class="card">
+<h3>باختصار</h3>
+<ul>
+  <li>أثناء تلاوتك يُرسَل صوتك مباشرةً إلى خادمنا للتعرّف على التلاوة، ليتابعك مكنون وينبّهك إلى الأخطاء. ولا يحفظ الخادم شيئًا: لا صوت ولا نصوص ولا نتائج ولا سجلات.</li>
+  <li>يُنزَّل نص القرآن والترجمات والتفاسير والتلاوات والخطوط من QuranHub، ولا تحمل هذه الطلبات اسمًا ولا حسابًا.</li>
+  <li>إن انضممت إلى مجموعة، يستقبل خادم المجموعات اسمًا ظاهرًا تختاره، ولا يستقبل مجاميعك اليومية إلا إن فعّلت المشاركة.</li>
+  <li>وكل ما سوى ذلك (الجلسات والأخطاء والتقدّم والأهداف والعلامات والإعدادات وتسجيلاتك المحفوظة) يبقى على جوالك، ولا يدخل ملف نسخة احتياطية إلا إن صدّرته.</li>
+</ul>
+</div>
+
+<h2>١. صوت تلاوتك</h2>
+<p>لا يستخدم مكنون الميكروفون إلا حين تبدأ جلسة تلاوة أو اختبارًا أو بحثًا صوتيًا، وبعد أن تأذن له بذلك. وما دام يستمع يُرسِل التطبيق صوتك مباشرةً عبر اتصال مشفّر (WSS) إلى خادم «نبر» للتعرّف على التلاوة، الذي تشغّله مسراج للذكاء الاصطناعي على <code dir="ltr">nabr.misraj.ai</code>. ويُرسِل مع الصوت موضع البداية (السورة والآية والكلمة) ومستويي الدقّة اللذين اخترتهما للتلاوة والتجويد. ولا يُرسِل اسمك ولا معرّفًا لك ولا لجهازك.</p>
+<p>يستخدم الخادم الصوت للتعرّف على تلاوتك وإعادة النتائج إليك فورًا فقط. <strong>ولا يحفظ شيئًا: لا صوت ولا نصوص ولا نتائج ولا سجلات.</strong> فإذا انتهت الجلسة أو الاختبار أو البحث لم يبقَ منه على الخادم شيء. ولأنه لا يُحفَظ شيء، فلا حاجة إلى طلب موافقتك على حفظ التسجيلات، وليس في التطبيق خيار لذلك.</p>
+<p>والبحث الصوتي يعمل بالطريقة نفسها: يُرسَل الصوت إلى الخادم نفسه ليجد الآية التي تلوتها، ولا يُسجَّل منه شيء ولا يُحفَظ، لا على الخادم ولا على جوالك.</p>
+<p>ونعتزم نقل التعرّف على التلاوة إلى خادم «نبر» لدى qurani.ai (<code dir="ltr">api.qurani.ai</code>)، وسنحدّث هذه السياسة قبل إصدار النسخة التي تستخدمه.</p>
+
+<h3>التسجيلات المحفوظة على جوالك</h3>
+<p>يحفظ مكنون افتراضيًا صوت كل جلسة واختبار <strong>على جوالك</strong>، لتعيد سماع جلساتك ومقاطع أخطائك وتشارك جلسة إن شئت. ولا يرفع التطبيق هذه التسجيلات أبدًا. وتُحذَف بعد ٣٠ يومًا، ويُحذَف الأقدم أولًا إذا تجاوزت ٥٠٠ ميغابايت. ويمكنك تغيير الحدّين، أو إيقاف الحفظ (الإعدادات ‹ الخصوصية والبيانات ‹ استخدام البيانات ‹ احتفظ بصوت الجلسات)، أو حذف كل التسجيلات دفعةً واحدة (الإعدادات ‹ حذف كل التسجيلات).</p>
+
+<h2>٢. محتوى القرآن (QuranHub)</h2>
+<p>يُنزِّل مكنون نص القرآن وصفحات المصحف وخطوطه والترجمات والتفاسير وبيانات الكلمات والتلاوات من QuranHub التابعة لـ qurani.ai (<code dir="ltr">api.quranhub.com</code>) وشبكة توزيع محتواها (<code dir="ltr">quranhub.b-cdn.net</code>). وحين تبحث في القرآن تُرسَل الكلمات التي تكتبها إلى QuranHub لجلب النتائج. ولا تحمل هذه الطلبات اسمًا ولا حسابًا ولا تسجيلًا ولا معرّفًا للجهاز، لكنها تُظهر عنوان IP والمحتوى الذي طلبته، كأي طلب على الإنترنت، وتخضع لشروط qurani.ai.</p>
+
+<h2>٣. المجموعات ولوحات الصدارة</h2>
+<p>تتيح لك المجموعات القراءة مع أهلك وأصحابك، ومشاركة ختمة، ورؤية لوحات صدارة المجموعة واللوحة العامة. وهي اختيارية، وتعمل على قاعدة بيانات مستضافة لمسراج للذكاء الاصطناعي على Supabase في فرانكفورت بألمانيا (الاتحاد الأوروبي). وحين تنشئ مجموعة أو تنضم إليها أول مرة، يسجّل التطبيق دخولًا مجهول الهوية: ينشئ الخادم معرّفًا عشوائيًا دون بريد أو جوال أو كلمة مرور، ويحفظ التطبيق رمز الدخول على جوالك. ثم يحفظ خادم المجموعات:</p>
+<ul>
+  <li>الاسم الظاهر الذي تكتبه (حتى ٤٠ حرفًا، ولك أن تختار أي اسم)، ويراه أعضاء مجموعاتك؛</li>
+  <li>المجموعات التي تنشئها (الاسم والرمز والوصف، عامة أو خاصة، ورمز الدعوة)، وعضويتك ودورك، والإعلانات التي تنشرها، والأجزاء التي تحجزها في الختمة المشتركة، والبلاغات التي ترسلها (السبب وملاحظة اختيارية)؛</li>
+  <li>فقط إن فعّلت <em>شارك مجاميعك اليومية</em>: مجموعًا واحدًا لكل يوم من الدقائق والصفحات والآيات والختمات. ويرى الأعضاء مجاميعك للأسبوع أو الشهر الهجري أو الإجمالي، لا قائمة بأيامك يومًا بيوم. وتعرض لوحة الصدارة العامة مجاميع المجموعات، لا الأفراد؛</li>
+  <li>وكأي خادم: عنوان IP ونوع الجهاز (user agent) مع كل جلسة دخول، في سجل الدخول وفي سجلات الطلبات لدى مزوّد الاستضافة.</li>
+</ul>
+<p>ولا يستقبل خادم المجموعات تسجيلاتك ولا أخطاءك ولا شيئًا مما تتلوه.</p>
+
+<h2>٤. ما يبقى على جوالك</h2>
+<p>جلساتك وأخطاؤك وتقدّمك في الكلمات والصفحات، وجدول الحفظ والمراجعة، والاختبارات والأهداف والسلاسل والإنجازات، والعلامات والإعدادات والاسم الظاهر، والتسجيلات المحفوظة والمحتوى المنزَّل، كلها محفوظة على جوالك، في قاعدة بيانات التطبيق وملفاته، ولا تخرج منه في ملف نسخة احتياطية إلا إن صدّرته أنت (القسم ٦). وإن كان النسخ الاحتياطي لجوالك مفعّلًا (iCloud أو الكمبيوتر) فقد يضمّ هذه البيانات، كما يفعل مع التطبيقات الأخرى.</p>
+<p>والتذكيرات، إن فعّلتها، تُجدوَل على جوالك. ولا يستخدم مكنون الإشعارات الواردة من خادم، ولا يسجّل رمزًا لها.</p>
+
+<h2>٥. ما لا نفعله</h2>
+<ul>
+  <li>لا تسجيل ولا إعلانات ولا أدوات تحليلات أو تقارير أعطال أو تتبّع، ولا معرّف إعلاني.</li>
+  <li>لا نبيع البيانات ولا نؤجّرها، ولا ندمجها مع بيانات من شركات أخرى.</li>
+  <li>لا مشتريات داخل التطبيق ولا اشتراكات.</li>
+</ul>
+
+<h2>٦. حين تشارك شيئًا بنفسك</h2>
+<p>لا يُرسِل مكنون تسجيلًا أو صورة جلسة أو وسام أو نص آية أو دعوة إلى مجموعة أو ملف نسخة احتياطية أو ملف تشخيص إلا حين تشاركه أنت من نافذة المشاركة في الآيفون أو تنسخه. وأنت من يحدد وجهته. ويضمّ ملف النسخة الاحتياطية سجلّك (الجلسات والأخطاء وتقدّم الكلمات والعلامات وتقدّم الختمة والمحفوظ وبطاقات مراجعته والأهداف ونتائج الاختبارات وأوقات مشاركة الآيات، ومدة كل تسجيل محفوظ وتاريخه) وأغلب إعداداتك، ومنها اسمك الظاهر وعمليات البحث الأخيرة والصفحات التي قرأتها مؤخرًا، ولا يضمّ أي صوت. والملف غير مشفّر، ولا يخرج من جوالك إلا إلى حيث تحفظه أو ترسله، ومن يصل إليه يستطيع قراءته. والروابط التي تفتحها (مثل qurani.ai) تُفتح في عرض Safari داخل التطبيق وتخضع لشروط الموقع نفسه.</p>
+
+<h2>٧. مزوّدو الخدمة وأبل</h2>
+<table>
+  <tr><th>الجهة</th><th>ما تستقبله</th><th>الغرض</th></tr>
+  <tr><td>مسراج للذكاء الاصطناعي (خادم نبر)</td><td>صوت الميكروفون مباشرةً أثناء الجلسة أو الاختبار أو البحث الصوتي، وموضع البداية، ومستويا الدقّة. تُعالَج فورًا ولا يُحفَظ منها شيء.</td><td>التعرّف على التلاوة</td></tr>
+  <tr><td>qurani.ai (QuranHub وشبكة توزيعه)</td><td>طلبات المحتوى وكلمات البحث، وعنوان IP</td><td>محتوى القرآن والتنزيلات</td></tr>
+  <tr><td>Supabase لصالح مسراج</td><td>بيانات المجموعات المذكورة في القسم ٣</td><td>المجموعات ولوحات الصدارة</td></tr>
+  <tr><td>أبل</td><td>بصفتها مشغّلة App Store وTestFlight. إن جرّبت التطبيق عبر TestFlight تشاركنا أبل ملاحظاتك ولقطات الشاشة التي ترسلها، وتقارير الأعطال، والاسم والبريد اللذين دُعيت بهما. وإن فعّلت «المشاركة مع مطوّري التطبيقات» في إعدادات iOS فقد تشاركنا أبل تقارير الأعطال وأرقام استخدام مجمّعة.</td><td>التوزيع والاختبار التجريبي، وفق سياسة خصوصية أبل</td></tr>
+</table>
+
+<h2>٨. الأطفال</h2>
+<p>مكنون لكل الأعمار، ولا يسأل عن العمر، وليس فيه إعلانات ولا تتبّع. والمكان الوحيد الذي يكتب فيه أحد نصًا يراه غيره هو المجموعات (الأسماء الظاهرة وأسماء المجموعات والإعلانات). ويحسُن أن يستخدم الأطفال الصغار المجموعات مع أحد والديهم. وإن رأيت أن طفلًا شارك فيها معلومات شخصية فراسلنا ونحذفها.</p>
+
+<h2>٩. مدة الاحتفاظ وطريقة الحذف</h2>
+<ul>
+  <li><strong>على جوالك:</strong> تتبع التسجيلات الحدود المذكورة في القسم ١. ولحذف كل شيء استخدم: ملفّي ‹ امسح كل البيانات من هذا الجهاز، أو احذف التطبيق.</li>
+  <li><strong>صوت التلاوة:</strong> لا يُحفَظ منه شيء على الخادم (القسم ١).</li>
+  <li><strong>المجموعات:</strong> إيقاف <em>شارك مجاميعك اليومية</em> يحذف كل ما شاركته من مجاميع. ويمكنك مغادرة المجموعة، ولمالك المجموعة حذفها بإعلاناتها ولوحتها. و«امسح كل البيانات من هذا الجهاز» يحذف كذلك بيانات مجموعاتك من الخادم (الاسم والعضويات والإعلانات والمجاميع والأجزاء المحجوزة والبلاغات؛ وتنتقل المجموعات التي تملكها إلى عضو آخر، أو تُحذَف إن لم يبقَ فيها أحد). ويُحذَف المستخدم المجهول الذي لا يفتح المجموعات ١٨٠ يومًا مع بياناته، ويُمسَح سجل الدخول بعد ٣٠ يومًا. أما سجلات الطلبات لدى مزوّد الاستضافة فتتبع مدة احتفاظه.</li>
+  <li>إن حذفت التطبيق قبل المسح فلا نستطيع ربط بيانات مجموعاتك المجهولة بك، وتُحذَف تلقائيًا بعد ١٨٠ يومًا. وإن احتجت حذفها قبل ذلك فراسلنا ونساعدك بقدر ما نستطيع التعرّف عليها.</li>
+</ul>
+
+<h2>١٠. الأمان</h2>
+<p>كل الاتصالات مشفّرة (HTTPS وWSS). وبيانات المجموعات محمية على الخادم بأمان على مستوى الصفوف، فلا يقرأ العضو إلا ما تسمح به مجموعاته.</p>
+
+<h2>١١. حقوقك والتواصل</h2>
+<p>لك أن تسألنا عن البيانات التي نحتفظ بها عنك، أو تطلب تصحيحها أو حذفها. ولأن مكنون بلا تسجيل، فأغلب بياناتك على جوالك وتحت تصرّفك.</p>
+<p><span dir="ltr">EQRAA FIRST INVESTMENT COMPANY</span>، الرياض ٣٤٤٢٢، المملكة العربية السعودية · <a href="mailto:hello@eqrra.com" dir="ltr">hello@eqrra.com</a></p>
+
+<h2>١٢. التغييرات</h2>
+<p>إن غيّرنا ما يرسله التطبيق فسنحدّث هذه الصفحة وتاريخ سريانها قبل إصدار تلك النسخة.</p>
+</section>
+</main>
+</body>
+</html>
